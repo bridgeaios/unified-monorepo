@@ -1,0 +1,3488 @@
+[
+  {
+    "Name": "GROQ",
+    "FullPath": "D:\\$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\\GROQ",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "$ROOT",
+    "FullPath": "D:\\$ROOT",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mobile-agent",
+    "FullPath": "D:\\$ROOT\\mobile-agent",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mobile-human",
+    "FullPath": "D:\\$ROOT\\mobile-human",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ui",
+    "FullPath": "D:\\$ROOT\\ui",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "agents",
+    "FullPath": "D:\\agents",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "AI-OS-V1",
+    "FullPath": "D:\\AI-OS-V1",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aurora-core",
+    "FullPath": "D:\\AI-OS-V1\\aurora-core",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "content-automation",
+    "FullPath": "D:\\AI-OS-V1\\content-automation",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "payout_core",
+    "FullPath": "D:\\AI-OS-V1\\core\\payout_core",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "gateway",
+    "FullPath": "D:\\AI-OS-V1\\gateway",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "md_lib",
+    "FullPath": "D:\\AI-OS-V1\\md_lib",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "AgenduvGridCreator",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\AgenduvGridCreator",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "agent_orchestrator",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\agent_orchestrator",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "AgentDemo",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\AgentDemo",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "autonomous-llc",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\autonomous-llc",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "chain_deployer",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\chain_deployer",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "economic_switch",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\economic_switch",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "EmailResponder",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\EmailResponder",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "MAIL_OPS",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\MAIL_OPS",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mainnet_dashboards",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\mainnet_dashboards",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mainnet_guard",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\mainnet_guard",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ModuleFixer",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\ModuleFixer",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "PolicyAgent",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\PolicyAgent",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "TaskWorkerAgent",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\TaskWorkerAgent",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "treasury_engine",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\treasury_engine",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "wallet_core",
+    "FullPath": "D:\\AI-OS-V1\\modules - test1\\wallet_core",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "AgenduvGridCreator",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\AgenduvGridCreator",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "agent_orchestrator",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\agent_orchestrator",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "AgentDemo",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\AgentDemo",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "autonomous-llc",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\autonomous-llc",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "chain_deployer",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\chain_deployer",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "economic_switch",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\economic_switch",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "EmailResponder",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\EmailResponder",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "MAIL_OPS",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\MAIL_OPS",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mainnet_dashboards",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\mainnet_dashboards",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mainnet_guard",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\mainnet_guard",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ModuleFixer",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\ModuleFixer",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "PolicyAgent",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\PolicyAgent",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "TaskWorkerAgent",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\TaskWorkerAgent",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "treasury_engine",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\treasury_engine",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "wallet_core",
+    "FullPath": "D:\\AI-OS-V1\\modules - test2\\wallet_core",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "AgenduvGridCreator",
+    "FullPath": "D:\\AI-OS-V1\\modules\\AgenduvGridCreator",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "agent_orchestrator",
+    "FullPath": "D:\\AI-OS-V1\\modules\\agent_orchestrator",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "AgentDemo",
+    "FullPath": "D:\\AI-OS-V1\\modules\\AgentDemo",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "audit_ledger",
+    "FullPath": "D:\\AI-OS-V1\\modules\\audit_ledger",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "autonomous-llc",
+    "FullPath": "D:\\AI-OS-V1\\modules\\autonomous-llc",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "chain_deployer",
+    "FullPath": "D:\\AI-OS-V1\\modules\\chain_deployer",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "economic_switch",
+    "FullPath": "D:\\AI-OS-V1\\modules\\economic_switch",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "EmailResponder",
+    "FullPath": "D:\\AI-OS-V1\\modules\\EmailResponder",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "finance",
+    "FullPath": "D:\\AI-OS-V1\\modules\\finance",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "genx",
+    "FullPath": "D:\\AI-OS-V1\\modules\\genx",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "local_agent_swarm",
+    "FullPath": "D:\\AI-OS-V1\\modules\\local_agent_swarm",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "MAIL_OPS",
+    "FullPath": "D:\\AI-OS-V1\\modules\\MAIL_OPS",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mainnet_dashboards",
+    "FullPath": "D:\\AI-OS-V1\\modules\\mainnet_dashboards",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mainnet_guard",
+    "FullPath": "D:\\AI-OS-V1\\modules\\mainnet_guard",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "marketplace",
+    "FullPath": "D:\\AI-OS-V1\\modules\\marketplace",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ModuleFixer",
+    "FullPath": "D:\\AI-OS-V1\\modules\\ModuleFixer",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "PolicyAgent",
+    "FullPath": "D:\\AI-OS-V1\\modules\\PolicyAgent",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "TaskWorkerAgent",
+    "FullPath": "D:\\AI-OS-V1\\modules\\TaskWorkerAgent",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "treasury_engine",
+    "FullPath": "D:\\AI-OS-V1\\modules\\treasury_engine",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "wallet_core",
+    "FullPath": "D:\\AI-OS-V1\\modules\\wallet_core",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "pdf",
+    "FullPath": "D:\\AI-OS-V1\\pdf",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aurora-core",
+    "FullPath": "D:\\AI-OS-V1\\phase-1\\aurora-core",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "md_lib",
+    "FullPath": "D:\\AI-OS-V1\\phase-1\\md_lib",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "grafana",
+    "FullPath": "D:\\AI-OS-V1\\telemetry\\grafana",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "prometheus",
+    "FullPath": "D:\\AI-OS-V1\\telemetry\\prometheus",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "react",
+    "FullPath": "D:\\AI-OS-V1\\ui\\react",
+    "Drive": "D:",
+    "Stack": "Vite",
+    "Category": "Web",
+    "Markers": [
+      "package.json",
+      "vite.config.js"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "core_build",
+    "FullPath": "D:\\AIOS-SEEDROOT\\core_build",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "core_build - Copy",
+    "FullPath": "D:\\AIOS-SEEDROOT\\core_build - Copy",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "core-services",
+    "FullPath": "D:\\AIOS-SEEDROOT\\core_build - Copy\\core-services",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "core-services",
+    "FullPath": "D:\\AIOS-SEEDROOT\\core_build\\core-services",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "government",
+    "FullPath": "D:\\aurora-commonwealth\\government",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "whitepaper",
+    "FullPath": "D:\\aurora-commonwealth\\whitepaper",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "auto-pricing-app",
+    "FullPath": "D:\\auto-pricing-app",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\auto-pricing-app\\backend",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "frontend",
+    "FullPath": "D:\\auto-pricing-app\\frontend",
+    "Drive": "D:",
+    "Stack": "Next.js",
+    "Category": "Web",
+    "Markers": [
+      "Dockerfile",
+      "next.config.js",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "Live demo build",
+    "FullPath": "D:\\backup from supac\\Live demo build",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "android",
+    "FullPath": "D:\\backup from supac\\Live demo build\\android",
+    "Drive": "D:",
+    "Stack": "Java",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deployment",
+    "FullPath": "D:\\backup from supac\\Live demo build\\deployment",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "render",
+    "FullPath": "D:\\backup from supac\\Live demo build\\render",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "BAIOS-V1",
+    "FullPath": "D:\\BAIOS-V1",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "BAIOS-V1_BACKUP",
+    "FullPath": "D:\\BAIOS-V1_BACKUP",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "blockchain",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\blockchain",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "blockchain",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\BRIDGE_AI_OS_V1_RELEASE\\blockchain",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "activation_pipeline",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\activation_pipeline",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ai_patent_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\ai_patent_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "auto_activation",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\auto_activation",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "autonomous_governance",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\autonomous_governance",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "brg_explorer",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\brg_explorer",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "codeforge",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\codeforge",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "compliance_api",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\compliance_api",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "containerization_agent",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\containerization_agent",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "country_readiness",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\country_readiness",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "crm",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\crm",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "cv_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\cv_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "funnel_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\funnel_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "getonlinenow",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\getonlinenow",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "halo_agents",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\halo_agents",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "luno_api",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\luno_api",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "microtask_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\microtask_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mode_x_dashboard",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\mode_x_dashboard",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "monetary_api",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\monetary_api",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "monetary_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\monetary_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node_dashboard",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\node_dashboard",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ocint_agents",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\ocint_agents",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "os",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\os",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "qualification_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\qualification_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "reputation_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\reputation_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "rollout_orchestrator",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\rollout_orchestrator",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "scaling_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\scaling_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "settlement_api",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\settlement_api",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "settlement_system",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\settlement_system",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "telemetry_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\telemetry_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "test_marvin_root",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\test_marvin_root",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "test_service",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\test_service",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "tokenomics_engine",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\tokenomics_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "whatsapp_microtasks",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\whatsapp_microtasks",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "worker_onboarding",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\containers\\worker_onboarding",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deployment",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\deployment",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "docker",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\docker",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "architect",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\docker\\architect",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "overseer",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\engine\\overseer",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "royal_gui",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\royal_gui",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "sentinel",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\sentinel",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "super_agent",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\super_agent",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "superagent",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\superagent",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "meta_agent",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\system\\meta_agent",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\task_engine_deploy\\backend",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deploy",
+    "FullPath": "D:\\BAIOS-V1_BACKUP\\task_engine_deploy\\deploy",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "avit_agent",
+    "FullPath": "D:\\BAIOS-V1\\avit_agent",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\BAIOS-V1\\backend",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "blockchain",
+    "FullPath": "D:\\BAIOS-V1\\blockchain",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "blockchain",
+    "FullPath": "D:\\BAIOS-V1\\BRIDGE_AI_OS_V1_RELEASE\\blockchain",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "BRIDGE_AI_OS_Whitepaper",
+    "FullPath": "D:\\BAIOS-V1\\BRIDGE_AI_OS_Whitepaper",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "librarian",
+    "FullPath": "D:\\BAIOS-V1\\bridge_os\\librarian",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "email",
+    "FullPath": "D:\\BAIOS-V1\\communication\\email",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "activation_pipeline",
+    "FullPath": "D:\\BAIOS-V1\\containers\\activation_pipeline",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ai_patent_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\ai_patent_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "auto_activation",
+    "FullPath": "D:\\BAIOS-V1\\containers\\auto_activation",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "autonomous_governance",
+    "FullPath": "D:\\BAIOS-V1\\containers\\autonomous_governance",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "brg_explorer",
+    "FullPath": "D:\\BAIOS-V1\\containers\\brg_explorer",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "codeforge",
+    "FullPath": "D:\\BAIOS-V1\\containers\\codeforge",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "compliance_api",
+    "FullPath": "D:\\BAIOS-V1\\containers\\compliance_api",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "containerization_agent",
+    "FullPath": "D:\\BAIOS-V1\\containers\\containerization_agent",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "country_readiness",
+    "FullPath": "D:\\BAIOS-V1\\containers\\country_readiness",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "crm",
+    "FullPath": "D:\\BAIOS-V1\\containers\\crm",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "cv_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\cv_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "funnel_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\funnel_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "getonlinenow",
+    "FullPath": "D:\\BAIOS-V1\\containers\\getonlinenow",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "halo_agents",
+    "FullPath": "D:\\BAIOS-V1\\containers\\halo_agents",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "luno_api",
+    "FullPath": "D:\\BAIOS-V1\\containers\\luno_api",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "microtask_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\microtask_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mode_x_dashboard",
+    "FullPath": "D:\\BAIOS-V1\\containers\\mode_x_dashboard",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "monetary_api",
+    "FullPath": "D:\\BAIOS-V1\\containers\\monetary_api",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "monetary_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\monetary_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node_dashboard",
+    "FullPath": "D:\\BAIOS-V1\\containers\\node_dashboard",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ocint_agents",
+    "FullPath": "D:\\BAIOS-V1\\containers\\ocint_agents",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "os",
+    "FullPath": "D:\\BAIOS-V1\\containers\\os",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "qualification_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\qualification_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "reputation_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\reputation_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "rollout_orchestrator",
+    "FullPath": "D:\\BAIOS-V1\\containers\\rollout_orchestrator",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "scaling_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\scaling_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "settlement_api",
+    "FullPath": "D:\\BAIOS-V1\\containers\\settlement_api",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "settlement_system",
+    "FullPath": "D:\\BAIOS-V1\\containers\\settlement_system",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "telemetry_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\telemetry_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "test_marvin_root",
+    "FullPath": "D:\\BAIOS-V1\\containers\\test_marvin_root",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "test_service",
+    "FullPath": "D:\\BAIOS-V1\\containers\\test_service",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "tokenomics_engine",
+    "FullPath": "D:\\BAIOS-V1\\containers\\tokenomics_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "whatsapp_microtasks",
+    "FullPath": "D:\\BAIOS-V1\\containers\\whatsapp_microtasks",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "worker_onboarding",
+    "FullPath": "D:\\BAIOS-V1\\containers\\worker_onboarding",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "D:\\BAIOS-V1\\dashboard",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboards-unified",
+    "FullPath": "D:\\BAIOS-V1\\dashboards-unified",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "launcher",
+    "FullPath": "D:\\BAIOS-V1\\dashboards-unified\\launcher",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deployment",
+    "FullPath": "D:\\BAIOS-V1\\deployment",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "docker",
+    "FullPath": "D:\\BAIOS-V1\\docker",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "architect",
+    "FullPath": "D:\\BAIOS-V1\\docker\\architect",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "overseer",
+    "FullPath": "D:\\BAIOS-V1\\engine\\overseer",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "launcher",
+    "FullPath": "D:\\BAIOS-V1\\launcher",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "OS_Production",
+    "FullPath": "D:\\BAIOS-V1\\OS_Production",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "royal_gui",
+    "FullPath": "D:\\BAIOS-V1\\royal_gui",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "sentinel",
+    "FullPath": "D:\\BAIOS-V1\\sentinel",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "super_agent",
+    "FullPath": "D:\\BAIOS-V1\\super_agent",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "superagent",
+    "FullPath": "D:\\BAIOS-V1\\superagent",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "system-dash",
+    "FullPath": "D:\\BAIOS-V1\\system-dash",
+    "Drive": "D:",
+    "Stack": "Vite",
+    "Category": "Web",
+    "Markers": [
+      "package.json",
+      "vite.config.js"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "meta_agent",
+    "FullPath": "D:\\BAIOS-V1\\system\\meta_agent",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\BAIOS-V1\\task_engine_deploy\\backend",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deploy",
+    "FullPath": "D:\\BAIOS-V1\\task_engine_deploy\\deploy",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "XXXXX",
+    "FullPath": "D:\\BAIOS-V1\\XXXXX",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ai-agent-task-engine",
+    "FullPath": "D:\\BAIOS-V1\\XXXXX\\ai-agent-task-engine",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\BAIOS-V1\\XXXXX\\backend",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "blockchain",
+    "FullPath": "D:\\BAIOS-V1\\XXXXX\\blockchain",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "D:\\BAIOS-V1\\XXXXX\\dashboard",
+    "Drive": "D:",
+    "Stack": "Vite",
+    "Category": "Web",
+    "Markers": [
+      "package.json",
+      "vite.config.js"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "gateway",
+    "FullPath": "D:\\BAIOS-V1\\XXXXX\\gateway",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "kernel",
+    "FullPath": "D:\\BAIOS-V1\\XXXXX\\kernel",
+    "Drive": "D:",
+    "Stack": "Rust",
+    "Category": "Systems",
+    "Markers": [
+      "Cargo.toml"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ui",
+    "FullPath": "D:\\BAIOS-V1\\XXXXX\\ui",
+    "Drive": "D:",
+    "Stack": "Vite",
+    "Category": "Web",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "WPF_Installer",
+    "FullPath": "D:\\BAIOS-V1\\XXXXX\\WPF_Installer",
+    "Drive": "D:",
+    "Stack": ".NET",
+    "Category": "Backend",
+    "Markers": [
+      "BridgeAIOSInstaller.csproj"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ai-agent-task-engine",
+    "FullPath": "D:\\BAIOS\\ai-agent-task-engine",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\BAIOS\\backend",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "blockchain",
+    "FullPath": "D:\\BAIOS\\blockchain",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "D:\\BAIOS\\dashboard",
+    "Drive": "D:",
+    "Stack": "Vite",
+    "Category": "Web",
+    "Markers": [
+      "package.json",
+      "vite.config.js"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard-launcher",
+    "FullPath": "D:\\BAIOS\\dashboard-launcher",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "launcher-api",
+    "FullPath": "D:\\BAIOS\\dashboard-launcher\\launcher-api",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "gateway",
+    "FullPath": "D:\\BAIOS\\gateway",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mcp",
+    "FullPath": "D:\\BAIOS\\system\\mcp",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "boss_bot_x",
+    "FullPath": "D:\\boss_bot_x",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/bridgeaios/boss_bot_x.git",
+    "Migration": "Review"
+  },
+  {
+    "Name": "BRIDGE RECOVERY",
+    "FullPath": "D:\\BRIDGE RECOVERY",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-ai-os",
+    "FullPath": "D:\\bridge-ai-os",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "package.json",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "svg-engine",
+    "FullPath": "D:\\bridge-ai-os\\assets\\svg-engine",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\bridge-ai-os\\backend",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-ai-os",
+    "FullPath": "D:\\bridge-ai-os\\bridge-ai-os",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "package.json",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\bridge-ai-os\\bridge-ai-os\\backend",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "crb-generator",
+    "FullPath": "D:\\bridge-ai-os\\bridge-ai-os\\crb-generator",
+    "Drive": "D:",
+    "Stack": ".NET",
+    "Category": "Backend",
+    "Markers": [
+      "crb-generator.csproj"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "five_p_module",
+    "FullPath": "D:\\bridge-ai-os\\bridge-ai-os\\five_p_module",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "launcher",
+    "FullPath": "D:\\bridge-ai-os\\bridge-ai-os\\launcher",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "supasoloc",
+    "FullPath": "D:\\bridge-ai-os\\bridge-ai-os\\supasoloc",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ui",
+    "FullPath": "D:\\bridge-ai-os\\bridge-ai-os\\ui",
+    "Drive": "D:",
+    "Stack": "Vite",
+    "Category": "Web",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "crb-generator",
+    "FullPath": "D:\\bridge-ai-os\\crb-generator",
+    "Drive": "D:",
+    "Stack": ".NET",
+    "Category": "Backend",
+    "Markers": [
+      "crb-generator.csproj"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "python",
+    "FullPath": "D:\\bridge-ai-os\\docker\\python",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "five_p_module",
+    "FullPath": "D:\\bridge-ai-os\\five_p_module",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "launcher",
+    "FullPath": "D:\\bridge-ai-os\\launcher",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mcp-gateway",
+    "FullPath": "D:\\bridge-ai-os\\mcp-gateway",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "supasoloc",
+    "FullPath": "D:\\bridge-ai-os\\supasoloc",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ui",
+    "FullPath": "D:\\bridge-ai-os\\ui",
+    "Drive": "D:",
+    "Stack": "Vite",
+    "Category": "Web",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-backend",
+    "FullPath": "D:\\bridge-backend",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-core",
+    "FullPath": "D:\\bridge-core",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-orchestrator",
+    "FullPath": "D:\\bridge-orchestrator",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-v1",
+    "FullPath": "D:\\bridge-versions\\bridge-v1",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-v2",
+    "FullPath": "D:\\bridge-versions\\bridge-v2",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "engine",
+    "FullPath": "D:\\BRIDGE\\engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "docker",
+    "FullPath": "D:\\docker",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "PAYDAY",
+    "FullPath": "D:\\PAYDAY",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "eco-task-system",
+    "FullPath": "D:\\PAYDAY\\eco-task-system",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ai-os-v1",
+    "FullPath": "D:\\REPO_STAGING\\ai-os-v1",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ai-agent-task-engine",
+    "FullPath": "D:\\REPO_STAGING\\baios\\ai-agent-task-engine",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\REPO_STAGING\\baios\\backend",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "blockchain",
+    "FullPath": "D:\\REPO_STAGING\\baios\\blockchain",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "D:\\REPO_STAGING\\baios\\dashboard",
+    "Drive": "D:",
+    "Stack": "Vite",
+    "Category": "Web",
+    "Markers": [
+      "package.json",
+      "vite.config.js"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard-launcher",
+    "FullPath": "D:\\REPO_STAGING\\baios\\dashboard-launcher",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "gateway",
+    "FullPath": "D:\\REPO_STAGING\\baios\\gateway",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-ai-os",
+    "FullPath": "D:\\REPO_STAGING\\bridge-ai-os",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "package.json",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "D:\\REPO_STAGING\\bridge-ai-os\\backend",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-ai-os",
+    "FullPath": "D:\\REPO_STAGING\\bridge-ai-os\\bridge-ai-os",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "package.json",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "crb-generator",
+    "FullPath": "D:\\REPO_STAGING\\bridge-ai-os\\crb-generator",
+    "Drive": "D:",
+    "Stack": ".NET",
+    "Category": "Backend",
+    "Markers": [
+      "crb-generator.csproj"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "five_p_module",
+    "FullPath": "D:\\REPO_STAGING\\bridge-ai-os\\five_p_module",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "launcher",
+    "FullPath": "D:\\REPO_STAGING\\bridge-ai-os\\launcher",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "mcp-gateway",
+    "FullPath": "D:\\REPO_STAGING\\bridge-ai-os\\mcp-gateway",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "supasoloc",
+    "FullPath": "D:\\REPO_STAGING\\bridge-ai-os\\supasoloc",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ui",
+    "FullPath": "D:\\REPO_STAGING\\bridge-ai-os\\ui",
+    "Drive": "D:",
+    "Stack": "Vite",
+    "Category": "Web",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "the_bridge",
+    "FullPath": "D:\\services\\the_bridge",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "document_engine",
+    "FullPath": "D:\\services\\the_bridge\\document_engine",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "web_factory",
+    "FullPath": "D:\\services\\the_bridge\\web_factory",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "SUPA",
+    "FullPath": "D:\\SUPA",
+    "Drive": "D:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "web",
+    "FullPath": "D:\\SUPA\\core-services\\web",
+    "Drive": "D:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "electron",
+    "FullPath": "D:\\UBI-Mastery\\orchestrator\\electron",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "server",
+    "FullPath": "D:\\UBI-Mastery\\orchestrator\\server",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "unicorn-suite",
+    "FullPath": "D:\\unicorn-suite",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "flutter",
+    "FullPath": "D:\\unicorn-suite\\apps\\flutter",
+    "Drive": "D:",
+    "Stack": "Flutter",
+    "Category": "Mobile",
+    "Markers": [
+      "pubspec.yaml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "web",
+    "FullPath": "D:\\unicorn-suite\\apps\\web",
+    "Drive": "D:",
+    "Stack": "Next.js",
+    "Category": "Web",
+    "Markers": [
+      "next.config.js",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "design-system",
+    "FullPath": "D:\\unicorn-suite\\packages\\design-system",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "shared-components",
+    "FullPath": "D:\\unicorn-suite\\packages\\shared-components",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "utils",
+    "FullPath": "D:\\unicorn-suite\\packages\\utils",
+    "Drive": "D:",
+    "Stack": "Node.js",
+    "Category": "Web",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  }
+]

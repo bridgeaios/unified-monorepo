@@ -1,0 +1,17 @@
+{"timestamp":"2026-11-21T13:38:47.806Z","method":"GET","path":"/health","status":200,"responseTimeMs":15.88,"ip":"::1"}
+{"timestamp":"2026-11-21T17:30:24.470Z","method":"GET","path":"/health","status":200,"responseTimeMs":13.29,"ip":"::1"}
+{"timestamp":"2026-11-22T03:59:16.098Z","method":"GET","path":"/health","status":200,"responseTimeMs":7.18,"ip":"::1"}
+{"timestamp":"2026-11-22T13:49:36.234Z","method":"GET","path":"/health","status":200,"responseTimeMs":7.63,"ip":"::1"}
+{"timestamp":"2026-11-22T16:06:56.377Z","method":"GET","path":"/health","status":200,"responseTimeMs":4.29,"ip":"::1"}
+{"timestamp":"2026-11-22T17:54:45.435Z","method":"GET","path":"/health","status":200,"responseTimeMs":4.72,"ip":"::1"}
+{"timestamp":"2026-11-22T18:35:55.160Z","method":"GET","path":"/health","status":200,"responseTimeMs":1.76,"ip":"::1"}
+{"timestamp":"2026-11-23T04:31:42.414Z","method":"GET","path":"/health","status":200,"responseTimeMs":10.96,"ip":"::1"}
+{"timestamp":"2026-11-23T09:40:52.658Z","method":"POST","path":"/api/logs","status":404,"responseTimeMs":5.39,"ip":"::1"}
+{"timestamp":"2026-11-23T09:40:52.689Z","method":"POST","path":"/api/logs","status":404,"responseTimeMs":0.49,"ip":"::1"}
+{"timestamp":"2026-11-23T09:40:52.692Z","method":"POST","path":"/api/logs","status":404,"responseTimeMs":0.28,"ip":"::1"}
+{"timestamp":"2026-11-23T09:41:50.087Z","method":"GET","path":"/health","status":200,"responseTimeMs":2.23,"ip":"::1"}
+{"timestamp":"2026-11-23T09:41:50.098Z","method":"GET","path":"/api/proxy-engine/health","status":404,"responseTimeMs":1.13,"ip":"::1"}
+{"timestamp":"2026-11-23T09:42:50.053Z","method":"GET","path":"/health","status":200,"responseTimeMs":0.95,"ip":"::1"}
+{"timestamp":"2026-11-23T09:42:50.490Z","method":"GET","path":"/api/proxy-engine/health","status":404,"responseTimeMs":0.67,"ip":"::1"}
+{"timestamp":"2026-11-23T09:57:31.605Z","method":"GET","path":"/health","status":200,"responseTimeMs":0.49,"ip":"::1"}
+{"timestamp":"2026-11-23T17:32:19.077Z","method":"GET","path":"/health","status":200,"responseTimeMs":8.98,"ip":"::1"}

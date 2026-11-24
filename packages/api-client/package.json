@@ -1,0 +1,14 @@
+{
+  "name": "@unified/api-client",
+  "version": "1.0.0",
+  "description": "Generated API client for calling the unified API gateway",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

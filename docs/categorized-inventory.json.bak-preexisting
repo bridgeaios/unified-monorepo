@@ -1,0 +1,111 @@
+{
+  "generated": "2026-11-19T00:00:00Z",
+  "generatedBy": "Discover-Projects.ps1",
+  "source": "unified-monorepo",
+  "totalProjects": 9,
+  "ports": {
+    "dashboard": 3000,
+    "api-gateway": 4000,
+    "migratedStart": 4001
+  },
+  "projects": [
+    {
+      "name": "api-gateway",
+      "fullPath": "apps/api-gateway",
+      "stack": "Node.js",
+      "category": "Core Service",
+      "git": true,
+      "suggestedService": "api-gateway",
+      "port": 4000,
+      "markers": ["package.json", "express"]
+    },
+    {
+      "name": "dashboard",
+      "fullPath": "apps/dashboard",
+      "stack": "Node.js",
+      "category": "Core Service",
+      "git": true,
+      "suggestedService": "dashboard",
+      "port": 3000,
+      "markers": ["package.json", "vite", "react"]
+    },
+    {
+      "name": "example-project",
+      "fullPath": "services/example-project",
+      "stack": "Python",
+      "category": "Migrated Service",
+      "git": true,
+      "suggestedService": "project-example-project",
+      "port": 4001,
+      "markers": ["requirements.txt", "django"],
+      "artifact": "app.py",
+      "entrypoint": ["gunicorn", "--bind", "0.0.0.0:4001", "app:app"]
+    },
+    {
+      "name": "go-monitor",
+      "fullPath": "services/go-monitor",
+      "stack": "Go",
+      "category": "Migrated Service",
+      "git": true,
+      "suggestedService": "project-go-monitor",
+      "port": 4002,
+      "markers": ["go.mod"],
+      "binary": "go-monitor"
+    },
+    {
+      "name": "rust-worker",
+      "fullPath": "services/rust-worker",
+      "stack": "Rust",
+      "category": "Migrated Service",
+      "git": true,
+      "suggestedService": "project-rust-worker",
+      "port": 4003,
+      "markers": ["Cargo.toml"],
+      "binary": "rust-worker"
+    },
+    {
+      "name": "java-billing",
+      "fullPath": "services/java-billing",
+      "stack": "Java",
+      "category": "Migrated Service",
+      "git": true,
+      "suggestedService": "project-java-billing",
+      "port": 4004,
+      "markers": ["pom.xml"],
+      "artifact": "target/*.jar",
+      "entrypoint": ["java", "-jar", "/app/app.jar"]
+    },
+    {
+      "name": "dotnet-reporting",
+      "fullPath": "services/dotnet-reporting",
+      "stack": ".NET",
+      "category": "Migrated Service",
+      "git": true,
+      "suggestedService": "project-dotnet-reporting",
+      "port": 4005,
+      "markers": ["*.csproj"],
+      "artifact": "publish",
+      "entrypoint": ["dotnet", "/app/dotnet-reporting.dll"]
+    },
+    {
+      "name": "legacy-proxy",
+      "fullPath": "services/legacy-proxy",
+      "stack": "Docker",
+      "category": "Migrated Service",
+      "git": false,
+      "suggestedService": "project-legacy-proxy",
+      "port": 4006,
+      "markers": ["Dockerfile"]
+    },
+    {
+      "name": "node-worker",
+      "fullPath": "services/node-worker",
+      "stack": "Node.js",
+      "category": "Migrated Service",
+      "git": true,
+      "suggestedService": "project-node-worker",
+      "port": 4007,
+      "markers": ["package.json"]
+    }
+  ]
+}

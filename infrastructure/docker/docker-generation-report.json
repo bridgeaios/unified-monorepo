@@ -1,0 +1,117 @@
+{
+  "generated": "2026-11-19T11:36:18.3440386+02:00",
+  "inventory": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\docs\\categorized-inventory.json",
+  "outputDir": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker",
+  "composeFile": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\docker-compose.yml",
+  "totalProjects": 9,
+  "services": [
+    {
+      "ProjectName": "api-gateway",
+      "FullPath": "apps/api-gateway",
+      "ServiceName": "api-gateway",
+      "Stack": "Node.js",
+      "Category": "Core Service",
+      "Port": 4000,
+      "DockerfilePath": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\api-gateway\\Dockerfile",
+      "ComposeService": "api-gateway",
+      "Context": "../../apps/api-gateway",
+      "Status": "OK"
+    },
+    {
+      "ProjectName": "dashboard",
+      "FullPath": "apps/dashboard",
+      "ServiceName": "dashboard",
+      "Stack": "Node.js",
+      "Category": "Core Service",
+      "Port": 3000,
+      "DockerfilePath": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\dashboard\\Dockerfile",
+      "ComposeService": "dashboard",
+      "Context": "../../apps/dashboard",
+      "Status": "OK"
+    },
+    {
+      "ProjectName": "example-project",
+      "FullPath": "services/example-project",
+      "ServiceName": "project-example-project",
+      "Stack": "Python",
+      "Category": "Migrated Service",
+      "Port": 4001,
+      "DockerfilePath": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\project-example-project\\Dockerfile",
+      "ComposeService": "project-example-project",
+      "Context": "../../services/example-project",
+      "Status": "OK"
+    },
+    {
+      "ProjectName": "go-monitor",
+      "FullPath": "services/go-monitor",
+      "ServiceName": "project-go-monitor",
+      "Stack": "Go",
+      "Category": "Migrated Service",
+      "Port": 4002,
+      "DockerfilePath": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\project-go-monitor\\Dockerfile",
+      "ComposeService": "project-go-monitor",
+      "Context": "../../services/go-monitor",
+      "Status": "OK"
+    },
+    {
+      "ProjectName": "rust-worker",
+      "FullPath": "services/rust-worker",
+      "ServiceName": "project-rust-worker",
+      "Stack": "Rust",
+      "Category": "Migrated Service",
+      "Port": 4003,
+      "DockerfilePath": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\project-rust-worker\\Dockerfile",
+      "ComposeService": "project-rust-worker",
+      "Context": "../../services/rust-worker",
+      "Status": "OK"
+    },
+    {
+      "ProjectName": "java-billing",
+      "FullPath": "services/java-billing",
+      "ServiceName": "project-java-billing",
+      "Stack": "Java",
+      "Category": "Migrated Service",
+      "Port": 4004,
+      "DockerfilePath": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\project-java-billing\\Dockerfile",
+      "ComposeService": "project-java-billing",
+      "Context": "../../services/java-billing",
+      "Status": "OK"
+    },
+    {
+      "ProjectName": "dotnet-reporting",
+      "FullPath": "services/dotnet-reporting",
+      "ServiceName": "project-dotnet-reporting",
+      "Stack": ".NET",
+      "Category": "Migrated Service",
+      "Port": 4005,
+      "DockerfilePath": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\project-dotnet-reporting\\Dockerfile",
+      "ComposeService": "project-dotnet-reporting",
+      "Context": "../../services/dotnet-reporting",
+      "Status": "OK"
+    },
+    {
+      "ProjectName": "legacy-proxy",
+      "FullPath": "services/legacy-proxy",
+      "ServiceName": "project-legacy-proxy",
+      "Stack": "Docker",
+      "Category": "Migrated Service",
+      "Port": 4006,
+      "DockerfilePath": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\project-legacy-proxy\\Dockerfile",
+      "ComposeService": "project-legacy-proxy",
+      "Context": "../../services/legacy-proxy",
+      "Status": "OK"
+    },
+    {
+      "ProjectName": "node-worker",
+      "FullPath": "services/node-worker",
+      "ServiceName": "project-node-worker",
+      "Stack": "Node.js",
+      "Category": "Migrated Service",
+      "Port": 4007,
+      "DockerfilePath": "E:\\AOE\\unified-monorepo\\scripts\\discover\\..\\..\\infrastructure\\docker\\project-node-worker\\Dockerfile",
+      "ComposeService": "project-node-worker",
+      "Context": "../../services/node-worker",
+      "Status": "OK"
+    }
+  ]
+}

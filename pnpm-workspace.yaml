@@ -1,0 +1,7 @@
+# Unified Monorepo Workspace
+# Do not edit original projects — they are linked/copied here preserving Git history.
+
+packages:
+  - 'apps/*'
+  - 'services/*'
+  - 'packages/*'

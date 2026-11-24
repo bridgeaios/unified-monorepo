@@ -1,0 +1,16 @@
+{
+  "name": "@unified/api-gateway",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Unified Backend / API Gateway - auth, routing, orchestration, health checks",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "http-proxy-middleware": "^2.0.6"
+  }
+}

@@ -1,0 +1,42 @@
+groups:
+  - name: unified-monorepo
+    rules:
+      - alert: ServiceDown
+        expr: up{job=~"unified-.*"} == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Service {{ $labels.service }} is down"
+          description: "Service {{ $labels.service }} has been unhealthy for more than 2 minutes."
+          runbook_url: "https://docs.example.com/unified-monorepo/runbook#service-down"
+
+      - alert: HighResponseTime
+        expr: http_request_duration_seconds{job=~"unified-.*"} > 0.5
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High response time on {{ $labels.service }}"
+          description: "Service {{ $labels.service }} has an average response time above 500ms for 5 minutes."
+          runbook_url: "https://docs.example.com/unified-monorepo/runbook#high-response-time"
+
+      - alert: GatewayDown
+        expr: up{job="unified-api-gateway"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "API Gateway is down"
+          description: "The unified API gateway has been unhealthy for more than 1 minute."
+          runbook_url: "https://docs.example.com/unified-monorepo/runbook#gateway-down"
+
+      - alert: HighErrorRate
+        expr: rate(http_requests_total{job=~"unified-.*",status=~"5.."}[1m]) > 0.05
+        for: 3m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High error rate on {{ $labels.service }}"
+          description: "Service {{ $labels.service }} has an error rate above 5% for 3 minutes."
+          runbook_url: "https://docs.example.com/unified-monorepo/runbook#high-error-rate"

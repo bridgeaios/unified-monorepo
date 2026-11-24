@@ -1,0 +1,2696 @@
+[
+  {
+    "Name": "AOE",
+    "FullPath": "E:\\AOE",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "dashboard.Dockerfile",
+      "docker-compose.yml",
+      "Dockerfile",
+      "Dockerfile.control-plane",
+      "gateway.Dockerfile",
+      "mcp.Dockerfile",
+      "next.config.mjs",
+      "package.json",
+      "spine.Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/bridgeautonomousnetwork/proper-pusha.git",
+    "Migration": "Review"
+  },
+  {
+    "Name": "AOE-nci-green",
+    "FullPath": "E:\\AOE-nci-green",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "dashboard.Dockerfile",
+      "gateway.Dockerfile",
+      "mcp.Dockerfile",
+      "package.json",
+      "spine.Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/bridgeautonomousnetwork/proper-pusha.git",
+    "Migration": "Review"
+  },
+  {
+    "Name": "finance-intel-agent",
+    "FullPath": "E:\\AOE-nci-green\\agents\\finance-intel-agent",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aid-platform",
+    "FullPath": "E:\\AOE-nci-green\\aid-platform",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aoe-mcp",
+    "FullPath": "E:\\AOE-nci-green\\aoe-mcp",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-xterm-prompt-engine",
+    "FullPath": "E:\\AOE-nci-green\\bridge_ai_os\\avatar-mirror\\bridge-xterm-prompt-engine",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-mission-control-demo",
+    "FullPath": "E:\\AOE-nci-green\\bridge-mission-control-demo",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deployment",
+    "FullPath": "E:\\AOE-nci-green\\bridge-mission-control-demo\\deployment",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deploy",
+    "FullPath": "E:\\AOE-nci-green\\deploy",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "godmode-opencode-terminal",
+    "FullPath": "E:\\AOE-nci-green\\hf-spaces\\godmode-opencode-terminal",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "android",
+    "FullPath": "E:\\AOE-nci-green\\mobile-app\\android",
+    "Drive": "E:",
+    "Stack": "Java/Gradle",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "app",
+    "FullPath": "E:\\AOE-nci-green\\mobile-app\\android\\app",
+    "Drive": "E:",
+    "Stack": "Java/Gradle",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "openship",
+    "FullPath": "E:\\AOE-nci-green\\openship",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Monorepo",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json",
+      "pnpm-workspace.yaml",
+      "turbo.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "api",
+    "FullPath": "E:\\AOE-nci-green\\openship\\apps\\api",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "cli",
+    "FullPath": "E:\\AOE-nci-green\\openship\\apps\\cli",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "E:\\AOE-nci-green\\openship\\apps\\dashboard",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "Dockerfile",
+      "next.config.mjs",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "desktop",
+    "FullPath": "E:\\AOE-nci-green\\openship\\apps\\desktop",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "edge",
+    "FullPath": "E:\\AOE-nci-green\\openship\\apps\\edge",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "email",
+    "FullPath": "E:\\AOE-nci-green\\openship\\apps\\email",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "client",
+    "FullPath": "E:\\AOE-nci-green\\openship\\apps\\email\\client",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "server",
+    "FullPath": "E:\\AOE-nci-green\\openship\\apps\\email\\server",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "web",
+    "FullPath": "E:\\AOE-nci-green\\openship\\apps\\web",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "Dockerfile",
+      "next.config.mjs",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "docker",
+    "FullPath": "E:\\AOE-nci-green\\openship\\docker",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dotnet",
+    "FullPath": "E:\\AOE-nci-green\\openship\\fixtures\\deploy\\dotnet",
+    "Drive": "E:",
+    "Stack": ".NET",
+    "Category": "Backend",
+    "Markers": [
+      "HelloApi.csproj"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "go",
+    "FullPath": "E:\\AOE-nci-green\\openship\\fixtures\\deploy\\go",
+    "Drive": "E:",
+    "Stack": "Go",
+    "Category": "Backend",
+    "Markers": [
+      "go.mod"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "laravel",
+    "FullPath": "E:\\AOE-nci-green\\openship\\fixtures\\deploy\\laravel",
+    "Drive": "E:",
+    "Stack": "PHP",
+    "Category": "Backend",
+    "Markers": [
+      "composer.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node",
+    "FullPath": "E:\\AOE-nci-green\\openship\\fixtures\\deploy\\node",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "python-fastapi",
+    "FullPath": "E:\\AOE-nci-green\\openship\\fixtures\\deploy\\python-fastapi",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "rust-axum",
+    "FullPath": "E:\\AOE-nci-green\\openship\\fixtures\\deploy\\rust-axum",
+    "Drive": "E:",
+    "Stack": "Rust",
+    "Category": "Backend",
+    "Markers": [
+      "Cargo.toml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "springboot",
+    "FullPath": "E:\\AOE-nci-green\\openship\\fixtures\\deploy\\springboot",
+    "Drive": "E:",
+    "Stack": "Java (Maven)",
+    "Category": "Backend",
+    "Markers": [
+      "pom.xml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "adapters",
+    "FullPath": "E:\\AOE-nci-green\\openship\\packages\\adapters",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "core",
+    "FullPath": "E:\\AOE-nci-green\\openship\\packages\\core",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "db",
+    "FullPath": "E:\\AOE-nci-green\\openship\\packages\\db",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "db-email",
+    "FullPath": "E:\\AOE-nci-green\\openship\\packages\\db-email",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "onboarding",
+    "FullPath": "E:\\AOE-nci-green\\openship\\packages\\onboarding",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ui",
+    "FullPath": "E:\\AOE-nci-green\\openship\\packages\\ui",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node-red",
+    "FullPath": "E:\\AOE-nci-green\\orchestration\\node-red",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "E:\\AOE-nci-green\\sovereign-console\\backend",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "getonlinenow-superagi",
+    "FullPath": "E:\\AOE-nci-green\\spaces\\getonlinenow-superagi",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "zoutpansberg",
+    "FullPath": "E:\\AOE-nci-green\\zoutpansberg",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "AOE-npmci-clean",
+    "FullPath": "E:\\AOE-npmci-clean",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "dashboard.Dockerfile",
+      "gateway.Dockerfile",
+      "mcp.Dockerfile",
+      "package.json",
+      "spine.Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/bridgeautonomousnetwork/proper-pusha.git",
+    "Migration": "Review"
+  },
+  {
+    "Name": "finance-intel-agent",
+    "FullPath": "E:\\AOE-npmci-clean\\agents\\finance-intel-agent",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aid-platform",
+    "FullPath": "E:\\AOE-npmci-clean\\aid-platform",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aoe-mcp",
+    "FullPath": "E:\\AOE-npmci-clean\\aoe-mcp",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-xterm-prompt-engine",
+    "FullPath": "E:\\AOE-npmci-clean\\bridge_ai_os\\avatar-mirror\\bridge-xterm-prompt-engine",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-mission-control-demo",
+    "FullPath": "E:\\AOE-npmci-clean\\bridge-mission-control-demo",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deployment",
+    "FullPath": "E:\\AOE-npmci-clean\\bridge-mission-control-demo\\deployment",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deploy",
+    "FullPath": "E:\\AOE-npmci-clean\\deploy",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "godmode-opencode-terminal",
+    "FullPath": "E:\\AOE-npmci-clean\\hf-spaces\\godmode-opencode-terminal",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "android",
+    "FullPath": "E:\\AOE-npmci-clean\\mobile-app\\android",
+    "Drive": "E:",
+    "Stack": "Java/Gradle",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "app",
+    "FullPath": "E:\\AOE-npmci-clean\\mobile-app\\android\\app",
+    "Drive": "E:",
+    "Stack": "Java/Gradle",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "openship",
+    "FullPath": "E:\\AOE-npmci-clean\\openship",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Monorepo",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json",
+      "pnpm-workspace.yaml",
+      "turbo.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "api",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\apps\\api",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "cli",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\apps\\cli",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\apps\\dashboard",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "Dockerfile",
+      "next.config.mjs",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "desktop",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\apps\\desktop",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "edge",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\apps\\edge",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "email",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\apps\\email",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "client",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\apps\\email\\client",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "server",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\apps\\email\\server",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "web",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\apps\\web",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "Dockerfile",
+      "next.config.mjs",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "docker",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\docker",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dotnet",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\fixtures\\deploy\\dotnet",
+    "Drive": "E:",
+    "Stack": ".NET",
+    "Category": "Backend",
+    "Markers": [
+      "HelloApi.csproj"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "go",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\fixtures\\deploy\\go",
+    "Drive": "E:",
+    "Stack": "Go",
+    "Category": "Backend",
+    "Markers": [
+      "go.mod"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "laravel",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\fixtures\\deploy\\laravel",
+    "Drive": "E:",
+    "Stack": "PHP",
+    "Category": "Backend",
+    "Markers": [
+      "composer.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\fixtures\\deploy\\node",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "python-fastapi",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\fixtures\\deploy\\python-fastapi",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "rust-axum",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\fixtures\\deploy\\rust-axum",
+    "Drive": "E:",
+    "Stack": "Rust",
+    "Category": "Backend",
+    "Markers": [
+      "Cargo.toml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "springboot",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\fixtures\\deploy\\springboot",
+    "Drive": "E:",
+    "Stack": "Java (Maven)",
+    "Category": "Backend",
+    "Markers": [
+      "pom.xml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "adapters",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\packages\\adapters",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "core",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\packages\\core",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "db",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\packages\\db",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "db-email",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\packages\\db-email",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "onboarding",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\packages\\onboarding",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ui",
+    "FullPath": "E:\\AOE-npmci-clean\\openship\\packages\\ui",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node-red",
+    "FullPath": "E:\\AOE-npmci-clean\\orchestration\\node-red",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "E:\\AOE-npmci-clean\\sovereign-console\\backend",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "getonlinenow-superagi",
+    "FullPath": "E:\\AOE-npmci-clean\\spaces\\getonlinenow-superagi",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "zoutpansberg",
+    "FullPath": "E:\\AOE-npmci-clean\\zoutpansberg",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "AOE-npmci-loop",
+    "FullPath": "E:\\AOE-npmci-loop",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "dashboard.Dockerfile",
+      "gateway.Dockerfile",
+      "mcp.Dockerfile",
+      "package.json",
+      "spine.Dockerfile"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/bridgeautonomousnetwork/proper-pusha.git",
+    "Migration": "Review"
+  },
+  {
+    "Name": "finance-intel-agent",
+    "FullPath": "E:\\AOE-npmci-loop\\agents\\finance-intel-agent",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aid-platform",
+    "FullPath": "E:\\AOE-npmci-loop\\aid-platform",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aoe-mcp",
+    "FullPath": "E:\\AOE-npmci-loop\\aoe-mcp",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-xterm-prompt-engine",
+    "FullPath": "E:\\AOE-npmci-loop\\bridge_ai_os\\avatar-mirror\\bridge-xterm-prompt-engine",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-mission-control-demo",
+    "FullPath": "E:\\AOE-npmci-loop\\bridge-mission-control-demo",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deployment",
+    "FullPath": "E:\\AOE-npmci-loop\\bridge-mission-control-demo\\deployment",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deploy",
+    "FullPath": "E:\\AOE-npmci-loop\\deploy",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "godmode-opencode-terminal",
+    "FullPath": "E:\\AOE-npmci-loop\\hf-spaces\\godmode-opencode-terminal",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "android",
+    "FullPath": "E:\\AOE-npmci-loop\\mobile-app\\android",
+    "Drive": "E:",
+    "Stack": "Java/Gradle",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "app",
+    "FullPath": "E:\\AOE-npmci-loop\\mobile-app\\android\\app",
+    "Drive": "E:",
+    "Stack": "Java/Gradle",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "openship",
+    "FullPath": "E:\\AOE-npmci-loop\\openship",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Monorepo",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json",
+      "pnpm-workspace.yaml",
+      "turbo.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "api",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\apps\\api",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "cli",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\apps\\cli",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\apps\\dashboard",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "Dockerfile",
+      "next.config.mjs",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "desktop",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\apps\\desktop",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "edge",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\apps\\edge",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "email",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\apps\\email",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "client",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\apps\\email\\client",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "server",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\apps\\email\\server",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "web",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\apps\\web",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "Dockerfile",
+      "next.config.mjs",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "docker",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\docker",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dotnet",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\fixtures\\deploy\\dotnet",
+    "Drive": "E:",
+    "Stack": ".NET",
+    "Category": "Backend",
+    "Markers": [
+      "HelloApi.csproj"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "go",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\fixtures\\deploy\\go",
+    "Drive": "E:",
+    "Stack": "Go",
+    "Category": "Backend",
+    "Markers": [
+      "go.mod"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "laravel",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\fixtures\\deploy\\laravel",
+    "Drive": "E:",
+    "Stack": "PHP",
+    "Category": "Backend",
+    "Markers": [
+      "composer.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\fixtures\\deploy\\node",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "python-fastapi",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\fixtures\\deploy\\python-fastapi",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "rust-axum",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\fixtures\\deploy\\rust-axum",
+    "Drive": "E:",
+    "Stack": "Rust",
+    "Category": "Backend",
+    "Markers": [
+      "Cargo.toml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "springboot",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\fixtures\\deploy\\springboot",
+    "Drive": "E:",
+    "Stack": "Java (Maven)",
+    "Category": "Backend",
+    "Markers": [
+      "pom.xml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "adapters",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\packages\\adapters",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "core",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\packages\\core",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "db",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\packages\\db",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "db-email",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\packages\\db-email",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "onboarding",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\packages\\onboarding",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ui",
+    "FullPath": "E:\\AOE-npmci-loop\\openship\\packages\\ui",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node-red",
+    "FullPath": "E:\\AOE-npmci-loop\\orchestration\\node-red",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "E:\\AOE-npmci-loop\\sovereign-console\\backend",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "getonlinenow-superagi",
+    "FullPath": "E:\\AOE-npmci-loop\\spaces\\getonlinenow-superagi",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "zoutpansberg",
+    "FullPath": "E:\\AOE-npmci-loop\\zoutpansberg",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": ".bbos-owner-acceptance",
+    "FullPath": "E:\\AOE\\.bbos-owner-acceptance",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": ".bringup-nm",
+    "FullPath": "E:\\AOE\\.bringup-nm",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "package",
+    "FullPath": "E:\\AOE\\.bringup-pkgs2\\package",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "superpowers",
+    "FullPath": "E:\\AOE\\.config\\opencode\\superpowers",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/obra/superpowers.git",
+    "Migration": "Review"
+  },
+  {
+    "Name": "brainstorm-server",
+    "FullPath": "E:\\AOE\\.config\\opencode\\superpowers\\tests\\brainstorm-server",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": ".kilo",
+    "FullPath": "E:\\AOE\\.kilo",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": ".kilocode",
+    "FullPath": "E:\\AOE\\.kilocode",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "hugging-face-evaluation",
+    "FullPath": "E:\\AOE\\.kilocode\\skills\\hugging-face-evaluation",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-ai-os-godmode-audit",
+    "FullPath": "E:\\AOE\\.tmp\\bridge-ai-os-godmode-audit",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "audit-toolkit",
+    "FullPath": "E:\\AOE\\.tmp\\bridge-ai-os-production-audit\\audit-toolkit",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "E:\\AOE\\.tmp\\bridge-task-runner\\backend",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "frontend",
+    "FullPath": "E:\\AOE\\.tmp\\bridge-task-runner\\frontend",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "pw-pkg",
+    "FullPath": "E:\\AOE\\.tmp\\pw-pkg",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "playwright-local",
+    "FullPath": "E:\\AOE\\.tools\\playwright-local",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "finance-intel-agent",
+    "FullPath": "E:\\AOE\\agents\\finance-intel-agent",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aid-platform",
+    "FullPath": "E:\\AOE\\aid-platform",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aoe-mcp",
+    "FullPath": "E:\\AOE\\aoe-mcp",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": ".next-bak-20261026011147",
+    "FullPath": "E:\\AOE\\archive-20261029\\.next-bak-20261026011147",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "aurora-prime",
+    "FullPath": "E:\\AOE\\aurora-prime",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": true,
+    "Remote": "https://huggingface.co/spaces/bridgeaios/aurora-prime",
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-xterm-prompt-engine",
+    "FullPath": "E:\\AOE\\bridge_ai_os\\avatar-mirror\\bridge-xterm-prompt-engine",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "leadgen",
+    "FullPath": "E:\\AOE\\bridge_ai_os\\services\\leadgen",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "bridge-mission-control-demo",
+    "FullPath": "E:\\AOE\\bridge-mission-control-demo",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deployment",
+    "FullPath": "E:\\AOE\\bridge-mission-control-demo\\deployment",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "casiNO",
+    "FullPath": "E:\\AOE\\casiNO",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/ryanehsacoza/casiNO",
+    "Migration": "Review"
+  },
+  {
+    "Name": "python",
+    "FullPath": "E:\\AOE\\core\\agents\\shared\\llm\\python",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "pyproject.toml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "lead-generation-app",
+    "FullPath": "E:\\AOE\\core\\leadgen\\lead-generation-app",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "deploy",
+    "FullPath": "E:\\AOE\\deploy",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "free-claude-code",
+    "FullPath": "E:\\AOE\\free-claude-code",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "pyproject.toml"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/alishahryar1/free-claude-code",
+    "Migration": "Review"
+  },
+  {
+    "Name": "godmode-opencode-terminal",
+    "FullPath": "E:\\AOE\\hf-spaces\\godmode-opencode-terminal",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "landings",
+    "FullPath": "E:\\AOE\\landings",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "next.config.ts",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "llm-gateway",
+    "FullPath": "E:\\AOE\\llm-gateway",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "portfolios",
+    "FullPath": "E:\\AOE\\mike\\portfolios",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/mikewithoutthemechanics/portfolios.git",
+    "Migration": "Review"
+  },
+  {
+    "Name": "android",
+    "FullPath": "E:\\AOE\\mobile-app\\android",
+    "Drive": "E:",
+    "Stack": "Java/Gradle",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "app",
+    "FullPath": "E:\\AOE\\mobile-app\\android\\app",
+    "Drive": "E:",
+    "Stack": "Java/Gradle",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "capacitor-cordova-android-plugins",
+    "FullPath": "E:\\AOE\\mobile-app\\android\\capacitor-cordova-android-plugins",
+    "Drive": "E:",
+    "Stack": "Java/Gradle",
+    "Category": "Backend",
+    "Markers": [
+      "build.gradle"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "openship",
+    "FullPath": "E:\\AOE\\openship",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Monorepo",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json",
+      "pnpm-workspace.yaml",
+      "turbo.json"
+    ],
+    "GitRepo": true,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "api",
+    "FullPath": "E:\\AOE\\openship\\apps\\api",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "cli",
+    "FullPath": "E:\\AOE\\openship\\apps\\cli",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "E:\\AOE\\openship\\apps\\dashboard",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "Dockerfile",
+      "next.config.mjs",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "desktop",
+    "FullPath": "E:\\AOE\\openship\\apps\\desktop",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "edge",
+    "FullPath": "E:\\AOE\\openship\\apps\\edge",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "email",
+    "FullPath": "E:\\AOE\\openship\\apps\\email",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "client",
+    "FullPath": "E:\\AOE\\openship\\apps\\email\\client",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "server",
+    "FullPath": "E:\\AOE\\openship\\apps\\email\\server",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "web",
+    "FullPath": "E:\\AOE\\openship\\apps\\web",
+    "Drive": "E:",
+    "Stack": "Next.js",
+    "Category": "Web Frontend",
+    "Markers": [
+      "Dockerfile",
+      "next.config.mjs",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "docker",
+    "FullPath": "E:\\AOE\\openship\\docker",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dotnet",
+    "FullPath": "E:\\AOE\\openship\\fixtures\\deploy\\dotnet",
+    "Drive": "E:",
+    "Stack": ".NET",
+    "Category": "Backend",
+    "Markers": [
+      "HelloApi.csproj"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "go",
+    "FullPath": "E:\\AOE\\openship\\fixtures\\deploy\\go",
+    "Drive": "E:",
+    "Stack": "Go",
+    "Category": "Backend",
+    "Markers": [
+      "go.mod"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "laravel",
+    "FullPath": "E:\\AOE\\openship\\fixtures\\deploy\\laravel",
+    "Drive": "E:",
+    "Stack": "PHP",
+    "Category": "Backend",
+    "Markers": [
+      "composer.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node",
+    "FullPath": "E:\\AOE\\openship\\fixtures\\deploy\\node",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "python-fastapi",
+    "FullPath": "E:\\AOE\\openship\\fixtures\\deploy\\python-fastapi",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "rust-axum",
+    "FullPath": "E:\\AOE\\openship\\fixtures\\deploy\\rust-axum",
+    "Drive": "E:",
+    "Stack": "Rust",
+    "Category": "Backend",
+    "Markers": [
+      "Cargo.toml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "springboot",
+    "FullPath": "E:\\AOE\\openship\\fixtures\\deploy\\springboot",
+    "Drive": "E:",
+    "Stack": "Java (Maven)",
+    "Category": "Backend",
+    "Markers": [
+      "pom.xml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "adapters",
+    "FullPath": "E:\\AOE\\openship\\packages\\adapters",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "core",
+    "FullPath": "E:\\AOE\\openship\\packages\\core",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "db",
+    "FullPath": "E:\\AOE\\openship\\packages\\db",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "db-email",
+    "FullPath": "E:\\AOE\\openship\\packages\\db-email",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "onboarding",
+    "FullPath": "E:\\AOE\\openship\\packages\\onboarding",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "ui",
+    "FullPath": "E:\\AOE\\openship\\packages\\ui",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "node-red",
+    "FullPath": "E:\\AOE\\orchestration\\node-red",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "polity",
+    "FullPath": "E:\\AOE\\polity",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "backend",
+    "FullPath": "E:\\AOE\\sovereign-console\\backend",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "getonlinenow-superagi",
+    "FullPath": "E:\\AOE\\spaces\\getonlinenow-superagi",
+    "Drive": "E:",
+    "Stack": "Python",
+    "Category": "Backend",
+    "Markers": [
+      "requirements.txt"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "BRIDGE",
+    "FullPath": "E:\\AOE\\TODO\\BRIDGE",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": true,
+    "Remote": "https://github.com/bridgeaios/BRIDGE.git",
+    "Migration": "Review"
+  },
+  {
+    "Name": "unified-monorepo",
+    "FullPath": "E:\\AOE\\unified-monorepo",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Monorepo",
+    "Markers": [
+      "docker-compose.yml",
+      "package.json",
+      "pnpm-workspace.yaml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "api-gateway",
+    "FullPath": "E:\\AOE\\unified-monorepo\\apps\\api-gateway",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "Dockerfile",
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "E:\\AOE\\unified-monorepo\\apps\\dashboard",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "Dockerfile",
+      "package.json",
+      "vite.config.js"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "docker",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "docker-compose.yml"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "api-gateway",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker\\api-gateway",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "dashboard",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker\\dashboard",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "project-dotnet-reporting",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker\\project-dotnet-reporting",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "project-example-project",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker\\project-example-project",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "project-go-monitor",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker\\project-go-monitor",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "project-java-billing",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker\\project-java-billing",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "project-legacy-proxy",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker\\project-legacy-proxy",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "project-node-worker",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker\\project-node-worker",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "project-rust-worker",
+    "FullPath": "E:\\AOE\\unified-monorepo\\infrastructure\\docker\\project-rust-worker",
+    "Drive": "E:",
+    "Stack": "Docker",
+    "Category": "Infrastructure",
+    "Markers": [
+      "Dockerfile"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "api-client",
+    "FullPath": "E:\\AOE\\unified-monorepo\\packages\\api-client",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "shared-types",
+    "FullPath": "E:\\AOE\\unified-monorepo\\packages\\shared-types",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "shared-ui",
+    "FullPath": "E:\\AOE\\unified-monorepo\\packages\\shared-ui",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "completion-plane",
+    "FullPath": "E:\\AOE\\workers\\completion-plane",
+    "Drive": "E:",
+    "Stack": "Node.js",
+    "Category": "Backend",
+    "Markers": [
+      "package.json"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  },
+  {
+    "Name": "zoutpansberg",
+    "FullPath": "E:\\AOE\\zoutpansberg",
+    "Drive": "E:",
+    "Stack": "Vite",
+    "Category": "Web Frontend",
+    "Markers": [
+      "package.json",
+      "vite.config.ts"
+    ],
+    "GitRepo": false,
+    "Remote": null,
+    "Migration": "Review"
+  }
+]

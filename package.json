@@ -1,0 +1,18 @@
+{
+  "name": "unified-monorepo",
+  "private": true,
+  "description": "Unified monorepo: frontend GUI + backend API gateway + migrated project services",
+  "version": "1.0.0",
+  "packageManager": "pnpm@8.15.0",
+  "scripts": {
+    "dev": "pnpm --filter dashboard dev & pnpm --filter api-gateway dev",
+    "build": "pnpm --filter dashboard build & pnpm --filter api-gateway build",
+    "launch": "pwsh ./scripts/launch/launch-all.ps1",
+    "discover:analyze": "pwsh ./scripts/discover/analyze-inventory.ps1",
+    "migrate:project": "pwsh ./scripts/migrate/migrate-project.ps1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}

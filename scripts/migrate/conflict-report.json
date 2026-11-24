@@ -1,0 +1,7 @@
+﻿{
+  "portCollisions": [],
+  "dependencyConflicts": [],
+  "generatedAt": "2026-11-20T00:00:00Z",
+  "servicesScanned": 172,
+  "note": "Light migration - only MIGRATION.md markers created, no source code copied. No port conflicts possible."
+}

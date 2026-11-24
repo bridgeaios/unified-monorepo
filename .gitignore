@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+*.lock
+
+# Build outputs
+dist/
+build/
+.next/
+.nuxt/
+.turbo/
+coverage/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Migration markers (keep source of truth separate)
+MIGRATION.md
