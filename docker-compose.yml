@@ -1,0 +1,63 @@
+# Root-level docker-compose.yml for the unified monorepo.
+# Orchestrates the full stack: dashboard + api-gateway (+ migrated services).
+#
+# To add a migrated project as a container, add a service block under `services/`
+# (see the commented example at the bottom of this file) and attach it to the
+# `unified-net` network.
+
+services:
+  api-gateway:
+    build:
+      context: ./apps/api-gateway
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    networks:
+      - unified-net
+    environment:
+      - PORT=4000
+      - NODE_ENV=production
+    volumes:
+      - api-gateway_node_modules:/apps/api-gateway/node_modules
+    restart: unless-stopped
+
+  dashboard:
+    build:
+      context: ./apps/dashboard
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - unified-net
+    environment:
+      - VITE_API_URL=http://api-gateway:4000
+    volumes:
+      - dashboard_node_modules:/apps/dashboard/node_modules
+    restart: unless-stopped
+
+  # -------------------------------------------------------------------------
+  # Example: per-service container for a migrated project under services/
+  # -------------------------------------------------------------------------
+  # services:
+  #   project-example:
+  #     build:
+  #       context: ./services/project-example
+  #       dockerfile: Dockerfile
+  #     ports:
+  #       - "4001:4001"
+  #     networks:
+  #       - unified-net
+  #     environment:
+  #       - PORT=4001
+  #     volumes:
+  #       - project-example_node_modules:/services/project-example/node_modules
+  #     restart: unless-stopped
+
+networks:
+  unified-net:
+    driver: bridge
+
+volumes:
+  api-gateway_node_modules:
+  dashboard_node_modules:
+  # project-example_node_modules:

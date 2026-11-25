@@ -1,0 +1,152 @@
+name: Migrate (manual dispatch)
+
+on:
+  workflow_dispatch:
+    inputs:
+      sourcePath:
+        description: 'Full path to a single project to migrate (e.g. C:\Src\legacy-app)'
+        required: false
+        type: string
+      serviceName:
+        description: 'Custom service name for the migrated project'
+        required: false
+        type: string
+      inventoryPath:
+        description: 'Path to projects.json inventory used for batch migration'
+        required: false
+        type: string
+        default: './projects.json'
+      runConflictCheck:
+        description: 'Also run conflict-check.ps1 after migration'
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  migrate:
+    name: Migrate project(s)
+    runs-on: windows-latest   # PowerShell scripts run on Windows
+    outputs:
+      summary-path: ${{ steps.summarize.outputs.summary-path }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate inputs
+        shell: pwsh
+        run: |
+          $src = "${{ inputs.sourcePath }}"
+          $inv = "${{ inputs.inventoryPath }}"
+          if (-not $src -and -not (Test-Path -LiteralPath $inv)) {
+            Write-Host ("ERROR: No sourcePath given and inventory not found at {0}" -f $inv) -ForegroundColor Red
+            exit 1
+          }
+          Write-Host ("sourcePath={0} serviceName={1} inventoryPath={2}" -f $src, "${{ inputs.serviceName }}", $inv) -ForegroundColor Cyan
+
+      - name: Migrate single project (migrate-project.ps1)
+        if: ${{ inputs.sourcePath != '' }}
+        shell: pwsh
+        run: |
+          if ("${{ inputs.serviceName }}" -ne "") {
+            pwsh ./scripts/migrate/migrate-project.ps1 `
+              -SourcePath "${{ inputs.sourcePath }}" `
+              -ServiceName "${{ inputs.serviceName }}" `
+              -MonoRepoRoot $env:GITHUB_WORKSPACE
+          } else {
+            pwsh ./scripts/migrate/migrate-project.ps1 `
+              -SourcePath "${{ inputs.sourcePath }}" `
+              -MonoRepoRoot $env:GITHUB_WORKSPACE
+          }
+
+      - name: Migrate all projects (migrate-all.ps1)
+        if: ${{ inputs.sourcePath == '' }}
+        shell: pwsh
+        run: |
+          pwsh ./scripts/migrate/migrate-all.ps1 `
+            -InventoryJson "${{ inputs.inventoryPath }}" `
+            -MonoRepoRoot $env:GITHUB_WORKSPACE
+
+      - name: Run conflict-check.ps1
+        if: ${{ inputs.runConflictCheck }}
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          pwsh ./scripts/migrate/conflict-check.ps1 `
+            -MonoRepoRoot $env:GITHUB_WORKSPACE `
+            -ReportPath $env:GITHUB_WORKSPACE/conflict-report.json
+
+      - name: Summarize migration results
+        id: summarize
+        shell: pwsh
+        run: |
+          $summaryPath = Join-Path $env:GITHUB_WORKSPACE "scripts/migrate/migration-summary.json"
+          if (Test-Path -LiteralPath $summaryPath) {
+            $summary = Get-Content -LiteralPath $summaryPath -Raw | ConvertFrom-Json
+            Write-Host ("Migration summary: total={0} migrated={1} skipped={2} errors={3}" -f `
+              $summary.total, $summary.migrated, $summary.skipped, $summary.errors) -ForegroundColor Cyan
+            "summary-path={0}" -f $summaryPath >> $env:GITHUB_OUTPUT
+          } else {
+            Write-Host "WARNING: migration-summary.json was not written." -ForegroundColor Yellow
+          }
+
+      - name: Upload migration-summary.json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: migration-summary-json
+          path: scripts/migrate/migration-summary.json
+          retention-days: 7
+
+      - name: Upload conflict-report.json artifact
+        if: ${{ inputs.runConflictCheck }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: conflict-report-json
+          path: conflict-report.json
+          retention-days: 7
+
+      - name: Commit migrated services to branch
+        id: commit
+        shell: pwsh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add services/ scripts/migrate/migration-summary.json scripts/migrate/conflict-report.json
+          if (git diff --cached --quiet) {
+            Write-Host "No changes to commit." -ForegroundColor Yellow
+            "committed=false" >> $env:GITHUB_OUTPUT
+          } else {
+            git commit -m "chore: migrate services via workflow_dispatch" -m "Run ID: ${{ github.run_id }} (${{ github.repository }})"
+            "committed=true" >> $env:GITHUB_OUTPUT
+          }
+
+      - name: Create pull request with migrated services
+        if: steps.commit.outputs.committed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: migrate/unified-services-${{ github.run_id }}
+          delete-branch: true
+          title: "chore: migrate services into unified monorepo"
+          body: |
+            Migrated services via the manual [migration workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+
+            ## Migration summary
+
+            The `migration-summary.json` and `conflict-report.json` artifacts are attached to this workflow run
+            (${{ steps.summarize.outputs.summary-path }}).
+
+            ## Files changed
+
+            - `services/` — migrated project services
+            - `scripts/migrate/migration-summary.json` — batch migration results
+            - `conflict-report.json` — port/dependency conflict report
+
+            ---
+            *Generated by GitHub Actions*
+          labels: migration,automated-pr

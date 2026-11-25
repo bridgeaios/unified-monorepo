@@ -1,0 +1,118 @@
+name: Launch stack
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploymentTarget:
+        description: 'Deployment target'
+        required: true
+        type: choice
+        options:
+          - self-hosted-windows
+          - docker-compose
+        default: self-hosted-windows
+      dashboardPort:
+        description: 'Dashboard frontend port'
+        required: false
+        type: number
+        default: 3000
+      gatewayPort:
+        description: 'API gateway port'
+        required: false
+        type: number
+        default: 4000
+
+jobs:
+  ###############################################################################
+  # launch — start dashboard + api-gateway on a self-hosted Windows runner via
+  # launch-all.ps1. The launcher is started detached, health-checked, then
+  # stopped with stop-all.ps1 so the CI job completes cleanly.
+  ###############################################################################
+  launch:
+    name: Launch on self-hosted Windows
+    runs-on: [self-hosted, windows]
+    if: ${{ inputs.deploymentTarget == 'self-hosted-windows' }}
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate launcher prerequisites
+        shell: pwsh
+        run: |
+          if (-not (Get-Command pnpm -ErrorAction SilentlyContinue)) {
+            Write-Host "ERROR: pnpm not found on the self-hosted runner. Install: https://pnpm.io" -ForegroundColor Red
+            exit 1
+          }
+          Write-Host ("pnpm {0}" -f (pnpm --version)) -ForegroundColor Green
+          if (-not (Test-Path "scripts/launch/launch-all.ps1")) {
+            Write-Host "ERROR: scripts/launch/launch-all.ps1 not found." -ForegroundColor Red
+            exit 1
+          }
+
+      - name: Launch dashboard + api-gateway
+        shell: pwsh
+        env:
+          DASHBOARD_PORT: ${{ inputs.dashboardPort }}
+          GATEWAY_PORT: ${{ inputs.gatewayPort }}
+        run: |
+          Write-Host "Launching unified stack on self-hosted Windows runner..." -ForegroundColor Cyan
+          Write-Host ("Dashboard:  http://localhost:{0}" -f $env:DASHBOARD_PORT) -ForegroundColor Cyan
+          Write-Host ("API Gateway: http://localhost:{0}" -f $env:GATEWAY_PORT) -ForegroundColor Cyan
+
+          # Start launch-all.ps1 detached so this step can return and run health checks.
+          Start-Process pwsh -ArgumentList @("-NoProfile", "-File", "scripts/launch/launch-all.ps1", `
+              "-DashboardPort", $env:DASHBOARD_PORT, "-GatewayPort", $env:GATEWAY_PORT) `
+              -WorkingDirectory $env:GITHUB_WORKSPACE -WindowStyle Hidden | Out-Null
+
+          # Wait for both services to report healthy.
+          $ready = $false
+          for ($i = 0; $i -lt 30; $i++) {
+            Start-Sleep -Seconds 2
+            $gatewayOk = $false
+            $dashOk    = $false
+            try {
+              $resp = Invoke-WebRequest -Uri ("http://localhost:{0}/health" -f $env:GATEWAY_PORT) -TimeoutSec 3 -ErrorAction Stop
+              $gatewayOk = ($resp.StatusCode -eq 200)
+            } catch {}
+            try {
+              $resp = Invoke-WebRequest -Uri ("http://localhost:{0}/" -f $env:DASHBOARD_PORT) -TimeoutSec 3 -ErrorAction Stop
+              $dashOk = ($resp.StatusCode -eq 200)
+            } catch {}
+            if ($gatewayOk -and $dashOk) { $ready = $true; break }
+            Write-Host ("Waiting for services... attempt {0}/30" -f ($i + 1))
+          }
+
+          if ($ready) {
+            Write-Host "Stack is healthy. Dashboard and API Gateway are running." -ForegroundColor Green
+          } else {
+            Write-Host "WARNING: One or more services did not become healthy. Check %TEMP%\unified-launch.log" -ForegroundColor Yellow
+          }
+
+          Write-Host ("PID file: {0}\unified-launch-pids.json" -f $env:TEMP) -ForegroundColor Cyan
+
+      - name: Stop stack (cleanup)
+        if: always()
+        shell: pwsh
+        run: |
+          pwsh ./scripts/launch/stop-all.ps1
+
+  ###############################################################################
+  # docker-compose — containerized deployment of dashboard + api-gateway.
+  ###############################################################################
+  docker-compose:
+    name: Containerized deployment (docker-compose)
+    runs-on: ubuntu-latest
+    if: ${{ inputs.deploymentTarget == 'docker-compose' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Start stack with docker-compose
+        run: |
+          docker-compose -f infrastructure/docker/docker-compose.yml up -d --build
+
+      - name: Show running containers and logs
+        run: |
+          docker-compose -f infrastructure/docker/docker-compose.yml ps
+          docker-compose -f infrastructure/docker/docker-compose.yml logs --tail=80

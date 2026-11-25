@@ -1,0 +1,26 @@
+# CODEOWNERS — Unified Monorepo
+# Each path pattern maps to the team responsible for code review.
+
+# Core frontend
+/apps/dashboard/ @frontend-team
+
+# Core backend / API gateway
+/apps/api-gateway/ @backend-team
+
+# Migrated project services
+/services/* @service-owners
+
+# Shared packages
+/packages/* @platform-team
+
+# Infrastructure (Docker, monitoring)
+/infrastructure/* @infra-team
+
+# Migration / discovery scripts
+/scripts/* @devops-team
+
+# Documentation
+/docs/* @docs-team
+
+# Root-level files
+* @platform-team

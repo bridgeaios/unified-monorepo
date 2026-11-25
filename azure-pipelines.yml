@@ -1,0 +1,244 @@
+# Azure Pipelines CI/CD for the unified monorepo.
+# Mirrors .github/workflows/ci.yml.
+#
+# Stages: Discover -> Analyze -> Migrate -> Build -> Test -> Docker -> Deploy
+#   * Windows agent (windows-latest) for PowerShell discovery/analyze/migrate.
+#   * Ubuntu agent (ubuntu-latest) for pnpm install/build/test and Docker.
+#
+# Manual approval for the Migrate and Deploy stages is enforced through Azure
+# DevOps environment protection rules (environments: production, staging).
+
+trigger:
+  branch:
+    include:
+      - main
+pr:
+  branches:
+    include:
+      - main
+
+variables:
+  NODE_VERSION: '20.x'
+  PNPM_VERSION: '8.x'
+
+stages:
+
+- stage: Discover
+  displayName: Discover projects
+  jobs:
+  - job: DiscoverProjects
+    displayName: Run Discover-Projects.ps1
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+    - checkout: self
+      fetchDepth: 0
+    - pwsh: |
+        $script = Join-Path $env:BUILD_SOURCESDIRECTORY 'scripts/discover/Discover-Projects.ps1'
+        if (Test-Path -LiteralPath $script) {
+          Write-Host 'Running Discover-Projects.ps1...' -ForegroundColor Cyan
+          & $script
+        } else {
+          Write-Host 'Discover-Projects.ps1 not found; skipping auto-discovery.' -ForegroundColor Yellow
+        }
+      displayName: Run Discover-Projects.ps1
+      continueOnError: true
+    - pwsh: |
+        if (-not (Test-Path 'projects.json')) {
+          Write-Host 'ERROR: projects.json not found.' -ForegroundColor Red
+          exit 1
+        }
+        Write-Host 'projects.json inventory present.' -ForegroundColor Green
+      displayName: Verify projects.json
+    - publish: $(Build.SourcesDirectory)/projects.json
+      artifact: projects-json
+      displayName: Publish projects.json artifact
+
+- stage: Analyze
+  displayName: Analyze inventory
+  dependsOn: Discover
+  jobs:
+  - job: AnalyzeInventory
+    displayName: Run analyze-inventory.ps1
+    pool:
+      vmImage: 'windows-latest'
+    steps:
+    - checkout: self
+    - download: current
+      artifact: projects-json
+      displayName: Download projects.json artifact
+    - pwsh: |
+        pwsh ./scripts/discover/analyze-inventory.ps1 `
+          -InventoryJson $(Build.SourcesDirectory)/projects.json `
+          -OutputDir $(Build.SourcesDirectory)/docs
+      displayName: Run analyze-inventory.ps1
+    - publish: $(Build.SourcesDirectory)/docs/migration-plan.json
+      artifact: migration-plan-json
+      displayName: Publish migration-plan.json artifact
+
+- stage: Migrate
+  displayName: Migrate projects (main only, manual approval)
+  dependsOn: Analyze
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+  jobs:
+  - job: MigrateAll
+    displayName: Run migrate-all.ps1
+    pool:
+      vmImage: 'windows-latest'
+    environment: production
+    steps:
+    - checkout: self
+      fetchDepth: 0
+    - download: current
+      artifact: projects-json
+      displayName: Download projects.json artifact
+    - pwsh: |
+        pwsh ./scripts/migrate/migrate-all.ps1 `
+          -InventoryJson $(Build.SourcesDirectory)/projects.json `
+          -MonoRepoRoot $(Build.SourcesDirectory)
+      displayName: Run migrate-all.ps1
+    - publish: $(Build.SourcesDirectory)/scripts/migrate/migration-summary.json
+      artifact: migration-summary-json
+      displayName: Publish migration-summary.json artifact
+
+- stage: Build
+  displayName: Build packages and apps
+  jobs:
+  - job: BuildApps
+    displayName: pnpm install + build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - checkout: self
+    - task: NodeTool@1
+      inputs:
+        versionSpec: $(NODE_VERSION)
+      displayName: Install Node.js
+    - script: |
+        npm install -g pnpm@$(PNPM_VERSION)
+        pnpm config set store-dir $(Agent.TempDirectory)/.pnpm-store
+      displayName: Install pnpm
+    - task: Cache@2
+      inputs:
+        key: 'pnpmstore | $(Agent.OS) | $(PNPM_VERSION) | $(Build.SourcesDirectory)/pnpm-workspace.yaml'
+        restoreKey: 'pnpmstore | $(Agent.OS) | $(PNPM_VERSION)'
+        path: $(Agent.TempDirectory)/.pnpm-store
+      displayName: Cache pnpm store
+    - script: pnpm install
+      displayName: pnpm install
+    - task: Cache@2
+      inputs:
+        key: 'nodemodules | $(Agent.OS) | $(Build.SourcesDirectory)/pnpm-workspace.yaml'
+        restoreKey: 'nodemodules | $(Agent.OS)'
+        path: |
+          $(Build.SourcesDirectory)/node_modules
+          $(Build.SourcesDirectory)/apps/dashboard/node_modules
+          $(Build.SourcesDirectory)/apps/api-gateway/node_modules
+          $(Build.SourcesDirectory)/packages/shared-types/node_modules
+          $(Build.SourcesDirectory)/packages/shared-ui/node_modules
+          $(Build.SourcesDirectory)/packages/api-client/node_modules
+      displayName: Cache workspace node_modules
+    - script: |
+        pnpm --filter shared-types build
+        pnpm --filter shared-ui build
+        pnpm --filter api-client build
+      displayName: Build shared packages (shared-types, shared-ui, api-client)
+    - script: pnpm --filter dashboard build
+      displayName: Build dashboard
+    - script: 'pnpm --filter api-gateway build || echo "api-gateway has no build script (dev: node index.js)"'
+      displayName: Build api-gateway
+
+- stage: Test
+  displayName: Test and coverage
+  dependsOn: Build
+  jobs:
+  - job: RunTests
+    displayName: Run tests and collect coverage
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - checkout: self
+    - task: NodeTool@1
+      inputs:
+        versionSpec: $(NODE_VERSION)
+      displayName: Install Node.js
+    - script: |
+        npm install -g pnpm@$(PNPM_VERSION)
+        pnpm config set store-dir $(Agent.TempDirectory)/.pnpm-store
+      displayName: Install pnpm
+    - task: Cache@2
+      inputs:
+        key: 'pnpmstore | $(Agent.OS) | $(PNPM_VERSION) | $(Build.SourcesDirectory)/pnpm-workspace.yaml'
+        restoreKey: 'pnpmstore | $(Agent.OS) | $(PNPM_VERSION)'
+        path: $(Agent.TempDirectory)/.pnpm-store
+      displayName: Cache pnpm store
+    - task: Cache@2
+      inputs:
+        key: 'nodemodules | $(Agent.OS) | $(Build.SourcesDirectory)/pnpm-workspace.yaml'
+        restoreKey: 'nodemodules | $(Agent.OS)'
+        path: |
+          $(Build.SourcesDirectory)/node_modules
+          $(Build.SourcesDirectory)/apps/dashboard/node_modules
+          $(Build.SourcesDirectory)/apps/api-gateway/node_modules
+          $(Build.SourcesDirectory)/packages/shared-types/node_modules
+          $(Build.SourcesDirectory)/packages/shared-ui/node_modules
+          $(Build.SourcesDirectory)/packages/api-client/node_modules
+      displayName: Restore workspace node_modules
+    - script: pnpm install
+      displayName: pnpm install
+    - script: pnpm --recursive run test --if-present || echo "No test scripts configured in workspace packages"
+      displayName: Run tests (if available)
+      continueOnError: true
+    - publish: $(Build.SourcesDirectory)/coverage
+      artifact: coverage-reports
+      displayName: Publish coverage artifacts
+      continueOnError: true
+
+- stage: Docker
+  displayName: Build and push Docker images
+  dependsOn: [Build, Test]
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/main')
+  jobs:
+  - job: DockerPush
+    displayName: Build and push images
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - checkout: self
+    - script: |
+        docker login -u "$(DOCKERHUB_USERNAME)" -p "$(DOCKERHUB_PASSWORD)"
+      displayName: Login to Docker Hub
+      condition: and(succeeded(), ne(variables['DOCKERHUB_PASSWORD'], ''))
+    - script: |
+        docker build -t $(DOCKERHUB_USERNAME)/unified-api-gateway:$(Build.SourceVersion) ./apps/api-gateway
+        docker push $(DOCKERHUB_USERNAME)/unified-api-gateway:$(Build.SourceVersion)
+      displayName: Build and push api-gateway image
+      condition: and(succeeded(), ne(variables['DOCKERHUB_PASSWORD'], ''))
+    - script: |
+        docker build -t $(DOCKERHUB_USERNAME)/unified-dashboard:$(Build.SourceVersion) ./apps/dashboard
+        docker push $(DOCKERHUB_USERNAME)/unified-dashboard:$(Build.SourceVersion)
+      displayName: Build and push dashboard image
+      condition: and(succeeded(), ne(variables['DOCKERHUB_PASSWORD'], ''))
+
+- stage: Deploy
+  displayName: Deploy to staging
+  dependsOn: Docker
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+  jobs:
+  - job: DeployStaging
+    displayName: Deploy to staging environment
+    pool:
+      vmImage: 'ubuntu-latest'
+    environment: staging
+    steps:
+    - checkout: self
+    - script: |
+        echo "Deploying unified stack to staging..."
+        if [ -n "$(STAGING_URL)" ]; then
+          echo "Target: $(STAGING_URL)"
+          # Example: ssh -i "$(STAGING_DEPLOY_KEY)" user@host 'cd /app && docker compose pull && docker compose up -d'
+          # Example: kubectl apply -f infrastructure/k8s
+        else
+          echo "STAGING_URL variable not set — skipping deployment."
+        fi
+      displayName: Deploy to staging

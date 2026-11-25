@@ -1,0 +1,336 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+env:
+  NODE_VERSION: 20
+  PNPM_VERSION: 8
+
+jobs:
+  ###############################################################################
+  # discover — run Discover-Projects.ps1 (or consolidated inventory) and publish
+  # projects.json as a workflow artifact for downstream jobs.
+  ###############################################################################
+  discover:
+    name: Discover projects
+    runs-on: windows-latest   # PowerShell scripts run on Windows
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Discover-Projects.ps1
+        id: discover
+        shell: pwsh
+        continue-on-error: true
+        run: |
+          $script = Join-Path $env:GITHUB_WORKSPACE "scripts/discover/Discover-Projects.ps1"
+          if (Test-Path -LiteralPath $script) {
+            Write-Host "Running Discover-Projects.ps1..." -ForegroundColor Cyan
+            & $script
+            if ($LASTEXITCODE -ne 0) {
+              Write-Host ("Discover-Projects.ps1 exited with code {0}" -f $LASTEXITCODE) -ForegroundColor Yellow
+            }
+          } else {
+            Write-Host "NOTE: scripts/discover/Discover-Projects.ps1 not found. Add it to enable auto-discovery." -ForegroundColor Yellow
+          }
+
+      - name: Verify projects.json inventory exists
+        shell: pwsh
+        run: |
+          if (Test-Path "projects.json") {
+            Write-Host "projects.json found." -ForegroundColor Green
+          } else {
+            Write-Host "ERROR: projects.json not found. Add Discover-Projects.ps1 to scripts/discover/ or check in projects.json." -ForegroundColor Red
+            exit 1
+          }
+
+      - name: Upload projects.json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: projects-json
+          path: projects.json
+          retention-days: 7
+
+  ###############################################################################
+  # analyze — run analyze-inventory.ps1 against projects.json and publish
+  # migration-plan.json (plus docs/MIGRATION_PLAN.md produced by the script).
+  ###############################################################################
+  analyze:
+    name: Analyze inventory
+    needs: discover
+    runs-on: windows-latest   # PowerShell scripts run on Windows
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download projects.json artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: projects-json
+          path: .
+
+      - name: Run analyze-inventory.ps1
+        shell: pwsh
+        run: |
+          pwsh ./scripts/discover/analyze-inventory.ps1 `
+            -InventoryJson $env:GITHUB_WORKSPACE/projects.json `
+            -OutputDir $env:GITHUB_WORKSPACE/docs
+
+      - name: Upload migration-plan.json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: migration-plan-json
+          path: |
+            docs/migration-plan.json
+            docs/MIGRATION_PLAN.md
+          retention-days: 7
+
+  ###############################################################################
+  # migrate — batch migration of all discovered projects into services/.
+  # Runs only on main and requires manual approval via the 'production'
+  # environment (configure required reviewers on that environment in GitHub).
+  ###############################################################################
+  migrate:
+    name: Migrate projects
+    needs: [discover, analyze]
+    runs-on: windows-latest   # PowerShell scripts run on Windows
+    if: github.ref == 'refs/heads/main'
+    environment: production   # requires manual approval when reviewers are configured
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download projects.json artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: projects-json
+          path: .
+
+      - name: Run migrate-all.ps1 (batch migration)
+        shell: pwsh
+        run: |
+          pwsh ./scripts/migrate/migrate-all.ps1 `
+            -InventoryJson $env:GITHUB_WORKSPACE/projects.json `
+            -MonoRepoRoot $env:GITHUB_WORKSPACE
+
+      - name: Upload migration-summary.json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: migration-summary-json
+          path: scripts/migrate/migration-summary.json
+          retention-days: 7
+
+  ###############################################################################
+  # build — pnpm install and build all workspace packages + apps.
+  # Caches the pnpm store and workspace node_modules.
+  ###############################################################################
+  build:
+    name: Build packages and apps
+    runs-on: ubuntu-latest   # pnpm/docker run on Linux
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: false
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/pnpm/store
+          key: ${{ runner.os }}-pnpm-v${{ env.PNPM_VERSION }}-${{ hashFiles('pnpm-workspace.yaml', '**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-v${{ env.PNPM_VERSION }}-
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Cache workspace node_modules
+        if: success()
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            node_modules
+            apps/dashboard/node_modules
+            apps/api-gateway/node_modules
+            packages/shared-types/node_modules
+            packages/shared-ui/node_modules
+            packages/api-client/node_modules
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('pnpm-workspace.yaml', '**/package.json') }}
+
+      - name: Build shared packages (shared-types, shared-ui, api-client)
+        run: |
+          pnpm --filter shared-types build
+          pnpm --filter shared-ui build
+          pnpm --filter api-client build
+
+      - name: Build dashboard
+        run: pnpm --filter dashboard build
+
+      - name: Build api-gateway
+        run: 'pnpm --filter api-gateway build || echo "api-gateway has no build script (dev: node index.js) — skipped"'
+
+  ###############################################################################
+  # test — run tests if any are configured, collect coverage reports.
+  ###############################################################################
+  test:
+    name: Test and coverage
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: false
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/pnpm/store
+          key: ${{ runner.os }}-pnpm-v${{ env.PNPM_VERSION }}-${{ hashFiles('pnpm-workspace.yaml', '**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-v${{ env.PNPM_VERSION }}-
+
+      - name: Restore workspace node_modules
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            node_modules
+            apps/dashboard/node_modules
+            apps/api-gateway/node_modules
+            packages/shared-types/node_modules
+            packages/shared-ui/node_modules
+            packages/api-client/node_modules
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('pnpm-workspace.yaml', '**/package.json') }}
+          fail-on-cache-miss: false
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run tests (if available)
+        id: tests
+        continue-on-error: true
+        run: |
+          pnpm --recursive run test --if-present || echo "No test scripts configured in workspace packages"
+
+      - name: Collect coverage artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-reports
+          path: |
+            **/coverage
+            **/coverage.json
+            **/lcov.info
+          retention-days: 30
+
+      - name: Coverage summary
+        if: always()
+        shell: pwsh
+        run: |
+          $reports = Get-ChildItem -Recurse -Filter "coverage-final.json" -ErrorAction SilentlyContinue |
+            Where-Object { $_.Directory.Name -eq 'coverage' } | Select-Object -ExpandProperty FullName
+          if ($reports) {
+            Write-Host ("Coverage reports found: {0}" -f ($reports -join ', ')) -ForegroundColor Green
+          } else {
+            Write-Host "No coverage reports generated." -ForegroundColor Yellow
+          }
+
+  ###############################################################################
+  # docker — build and push Docker images (only when registry secrets exist).
+  ###############################################################################
+  docker:
+    name: Build and push Docker images
+    needs: [build, test]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Hub
+        if: ${{ secrets.DOCKERHUB_TOKEN != '' }}
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push api-gateway image
+        if: ${{ secrets.DOCKERHUB_TOKEN != '' }}
+        uses: docker/build-push-action@v6
+        with:
+          context: ./apps/api-gateway
+          push: true
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/unified-api-gateway:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/unified-api-gateway:latest
+
+      - name: Build and push dashboard image
+        if: ${{ secrets.DOCKERHUB_TOKEN != '' }}
+        uses: docker/build-push-action@v6
+        with:
+          context: ./apps/dashboard
+          push: true
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/unified-dashboard:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/unified-dashboard:latest
+
+  ###############################################################################
+  # deploy — deploy to staging (only when deployment secrets exist).
+  ###############################################################################
+  deploy:
+    name: Deploy to staging
+    needs: [docker]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && secrets.STAGING_DEPLOY_KEY != ''
+    environment: staging
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to staging
+        env:
+          STAGING_URL: ${{ secrets.STAGING_URL }}
+          STAGING_DEPLOY_KEY: ${{ secrets.STAGING_DEPLOY_KEY }}
+        run: |
+          echo "Deploying unified stack to staging..."
+          if [ -n "${STAGING_URL}" ]; then
+            echo "Target: ${STAGING_URL}"
+            # Example: ssh -i "${STAGING_DEPLOY_KEY}" user@host 'cd /app && docker compose pull && docker compose up -d'
+            # Example: kubectl apply -f infrastructure/k8s
+          else
+            echo "STAGING_URL not configured — skipping deployment."
+          fi

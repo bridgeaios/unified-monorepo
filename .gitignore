@@ -28,3 +28,19 @@ Thumbs.db
 
 # Migration markers (keep source of truth separate)
 MIGRATION.md
+
+# Discovery inventory (may contain sensitive remote URLs / tokens)
+docs/categorized-inventory.json
+docs/consolidated-inventory.json
+docs/integration-mapping.json
+docs/system-discovery.json
+docs/deep-scan-*.json
+
+# Logs
+apps/logs/
+*.log
+
+# Temp files
+_tmp_*
+*.bak
+*.bak-preexisting

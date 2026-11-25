@@ -1,0 +1,92 @@
+name: Pre-migration conflict check
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  conflict-check:
+    name: Detect port and dependency conflicts
+    runs-on: windows-latest   # PowerShell scripts run on Windows
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run conflict-check.ps1
+        id: check
+        shell: pwsh
+        run: |
+          pwsh ./scripts/migrate/conflict-check.ps1 `
+            -MonoRepoRoot $env:GITHUB_WORKSPACE `
+            -ReportPath $env:GITHUB_WORKSPACE/conflict-report.json
+
+          $report = Get-Content -LiteralPath $env:GITHUB_WORKSPACE/conflict-report.json -Raw | ConvertFrom-Json
+          Write-Host ("Services scanned: {0}" -f $report.servicesScanned) -ForegroundColor Cyan
+          Write-Host ("Port collisions: {0}" -f $report.summary.portCollisions) -ForegroundColor Cyan
+          Write-Host ("Dependency conflicts: {0}" -f $report.summary.dependencyConflicts) -ForegroundColor Cyan
+
+          "collisions={0}" -f $report.summary.portCollisions >> $env:GITHUB_OUTPUT
+          "depconflicts={0}" -f $report.summary.dependencyConflicts >> $env:GITHUB_OUTPUT
+
+      - name: Fail if port collisions or dependency conflicts detected
+        if: ${{ steps.check.outputs.collisions > 0 || steps.check.outputs.depconflicts > 0 }}
+        shell: pwsh
+        run: |
+          Write-Host "ERROR: Port collisions or dependency version conflicts detected. See conflict-report.json." -ForegroundColor Red
+          exit 1
+
+      - name: Upload conflict-report.json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: conflict-report-json
+          path: conflict-report.json
+          retention-days: 7
+
+      - name: Build PR comment body
+        if: github.event_name == 'pull_request'
+        shell: pwsh
+        id: comment
+        run: |
+          $report = Get-Content -LiteralPath $env:GITHUB_WORKSPACE/conflict-report.json -Raw | ConvertFrom-Json
+
+          $lines = @()
+          $lines.Add("## Pre-migration conflict check")
+          $lines.Add("")
+          $lines.Add("Services scanned: $($report.servicesScanned)")
+          $lines.Add("")
+
+          if ($report.summary.portCollisions -gt 0) {
+            $lines.Add("### :warning: Port collisions")
+            foreach ($c in $report.portCollisions) {
+              $lines.Add("- Port **$($c.port)** is used by: $($c.services -join ', ')")
+            }
+          } else {
+            $lines.Add(":white_check_mark: No port collisions detected.")
+          }
+          $lines.Add("")
+
+          if ($report.summary.dependencyConflicts -gt 0) {
+            $lines.Add("### :warning: Dependency version conflicts")
+            foreach ($c in $report.dependencyConflicts) {
+              $detail = ($c.versions.GetEnumerator() | ForEach-Object { "$($_.Key)=$($_.Value)" }) -join ', '
+              $lines.Add("- **$($c.name)**: $detail")
+            }
+          } else {
+            $lines.Add(":white_check_mark: No dependency version conflicts detected.")
+          }
+          $lines.Add("")
+          $lines.Add("Re-run locally with: `pwsh ./scripts/migrate/conflict-check.ps1`")
+
+          $lines | Out-File -FilePath $env:GITHUB_WORKSPACE/conflict-comment.md -Encoding UTF8
+
+      - name: Post conflict report as pull request comment
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --body-file conflict-comment.md
